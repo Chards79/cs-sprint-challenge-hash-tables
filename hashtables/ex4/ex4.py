@@ -15,7 +15,7 @@ def has_negatives(a):
     Arr = []
 
     for x in a:
-        if x < 0 and -x:
+        if x < 0 and -x in HashTable:
             Arr.append(-x)
         else:
             pass
