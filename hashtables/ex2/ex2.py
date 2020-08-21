@@ -11,7 +11,18 @@ def reconstruct_trip(tickets, length):
     YOUR CODE HERE
     """
     # Your code here
+    HashTable = {}
 
+    for tickets in range(length):
+        HashTable[source] = destination
+
+    route = []
+
+    for i in HashTable:
+        if source == None:
+            i == destination
+        else:
+            i -= 1
     return route
 
 

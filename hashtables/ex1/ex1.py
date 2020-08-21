@@ -5,18 +5,35 @@ def get_indices_of_item_weights(weights, length, limit):
     # Your code here
     HashTable = {}
 
-    for x in weights:
-        if x is not None:
-            HashTable[x] =  # the list index
+    for index in range(length):
+        hash_index = limit - weights[index]
 
-    Arr = []
+        if hash_index in HashTable:
+            value = HashTable[hash_index]
+            output = (index, value)
+            return output
 
-    for x in HashTable:
-        if limit == x + x:
-            Arr.append(x)
-            return Arr
         else:
-            return None
+            HashTable[weights[index]] = index
+
+    return None
+
+    # HashTable = {}
+
+    # for weight in weights:
+    #     if weight is not None:
+    #         HashTable[weight[i]] = i  # the list index
+    #     else:
+    #         pass
+
+    # Arr = []
+
+    # for weight in HashTable:
+    #     if limit - weight in HashTable:
+    #         Arr.append(weight)
+    #         return Arr
+    #     else:
+    #         return None
 
 
 # need to be able to find 2 weights in a list that add up to the given limit
